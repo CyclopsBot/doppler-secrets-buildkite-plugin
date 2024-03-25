@@ -40,7 +40,7 @@ ${var}=$(${cmd})"
   done
 else
   # build doppler command to download all secrets
-  cmd="doppler secrets download --no-file --format env"
+  cmd="doppler secrets download --no-file --format env-no-quotes"
   add_project_config ${cmd}
 
   secrets=$(${cmd})
