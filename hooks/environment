@@ -36,7 +36,7 @@ if [ ! -z "${variables}" ]; then
     add_project_config ${cmd}
 
     secrets="${secrets}
-${var}=\"$(${cmd})\""
+${var}=$(${cmd})"
   done
 else
   # build doppler command to download all secrets
